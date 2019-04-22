@@ -5,7 +5,7 @@ class ImageSquare extends React.Component {
     render(){
         return(
             <div className="square">
-                <h1>Hello world</h1>
+                <h1>Need some motivation?</h1>
                 <button>Generate New Picture</button>
                 <div>
                     <img id="imgsum" src="../timage1.jpg" />

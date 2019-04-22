@@ -22,6 +22,7 @@ button {
 
 button:active {
     transform: scale(0.80);
+    background-color: aqua;
 }
 
 button:focus {
