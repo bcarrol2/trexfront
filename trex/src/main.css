@@ -47,3 +47,16 @@ button.ghost {
 .square h1 {
     color: white;
 }
+
+#imgsum {
+    height: 100%; 
+    width: 80%; 
+    object-fit: contain;
+    border: 1px solid white;
+}
+
+#quote_sum {
+    border: 1px solid white;
+    height: 170px;
+    border-radius: 20%;
+}
