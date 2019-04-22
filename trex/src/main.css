@@ -4,8 +4,8 @@ html {
     background-size: 100%;
 }
 
-#left_div {
-    float: left;
+.so_lonely {
+    margin-top: 10px;
 }
 
 button {
@@ -17,10 +17,11 @@ button {
     font-weight: bold;
     padding: 10px 40px;
     letter-spacing: 1px;
+    /* position: absolute; */
 }
 
 button:active {
-    transform: scale(0.50);
+    transform: scale(0.80);
 }
 
 button:focus {
@@ -34,8 +35,13 @@ button.ghost {
 
 .square {
     background: #000;
-    width: 40vw;
-    height: 40vw;
+    width: 45rem;
+    height: 40rem;
+    border-radius: 10%;
+    border: 2px solid white;
+    margin: 20px 20px 20px 20px;
+    /* padding-top: 20px; */
+    /* position: absolute; */
 }
 
 .square h1 {

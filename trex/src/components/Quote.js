@@ -4,8 +4,8 @@ import React from 'react';
 class Quote extends React.Component{
     render(){
         return(
-            <div>
-                <button id="left_div">Generate random quote</button>
+            <div className="so_lonely">
+                <button>Generate random quote</button>
             </div>
         )
     }
