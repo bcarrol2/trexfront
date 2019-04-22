@@ -1,0 +1,9 @@
+html {
+    background-image: url('./trexbackground.jpg');
+    /* background-repeat: none; */
+    background-size: 100%;
+}
+
+#left_div {
+    float: left;
+}
