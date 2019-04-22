@@ -5,7 +5,7 @@ class Quote extends React.Component{
     render(){
         return(
             <div>
-                <button id="left_div">Get Quote</button>
+                <button id="left_div">Generate random quote</button>
             </div>
         )
     }
