@@ -1,19 +1,35 @@
 import React from 'react';
 
+
 class QuoteSquare extends React.Component {
 
-    componentDidMount(){
-        fetch('http://localhost:3000/image')
-        .then(res => res.json())
-        .then(response => {
-            console.log(response)
-        })
+    constructor(){
+        super()
+
+        this.state = {
+            quotes: []
+        }
+        console.log(this.state.quotes)
     }
 
+    componentDidMount(){
+        const quote = fetch('http://localhost:3000/quote')
+        // console.log(quote)
+        .then(res => res.json())
+        .then(response => {
+        //     console.log(response)
+            this.setState({ quotes: response})
+        })
+        // console.log(quote)
+    }
+    
     render(){
+        let these = this.state.quotes;
+        // console.log(these.text)
+
         return(
             <div id="quote_sum">
-                <h1>A stockbroker urged me to buy a stock that would triple its value every year. I told him, ‘At my age, I don’t even buy green bananas.'</h1>
+                <h1>{these.text}</h1>
             </div>
         )
     }
