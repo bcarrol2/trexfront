@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class QuoteSquare extends React.Component {
 
     constructor(){
@@ -9,27 +8,36 @@ class QuoteSquare extends React.Component {
         this.state = {
             quotes: []
         }
-        console.log(this.state.quotes)
+    }
+
+    clickThisFunctionToGetANewRandomQuoteFromTheRailsServerICreated = () => {
+        const quote = fetch('http://localhost:3000/quote')
+        .then(res => res.json())
+        .then(response => {
+            this.setState({quotes: response})
+        })
     }
 
     componentDidMount(){
-        const quote = fetch('http://localhost:3000/quote')
-        // console.log(quote)
-        .then(res => res.json())
-        .then(response => {
-        //     console.log(response)
-            this.setState({ quotes: response})
-        })
-        // console.log(quote)
+        this.clickThisFunctionToGetANewRandomQuoteFromTheRailsServerICreated()
     }
-    
+
+    handleClick(e){
+        e.preventDefault();
+        this.componentDidMount();
+    }   
+
     render(){
         let these = this.state.quotes;
-        // console.log(these.text)
 
         return(
-            <div id="quote_sum">
-                <h1>{these.text}</h1>
+            <div>
+                <div id="quote_sum">
+                    <h1>{these.text}</h1>
+                </div> 
+                <div>
+                    <button onClick={this.handleClick}>Generate random quote</button>
+                </div>
             </div>
         )
     }
