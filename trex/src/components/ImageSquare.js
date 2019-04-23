@@ -31,8 +31,8 @@ class ImageSquare extends React.Component {
 
         return(
             <div className="square">
-                <h1>Need some motivation?</h1>
-                <button onClick={this.handleClick}>Generate New Picture</button>
+                <h1>Need some comedic motivation?</h1>
+                <button onClick={this.handleClick}>Generate Alternate Set</button>
                 <div>
                     <img id="imgsum" src={pict.image_url} />
                 </div>
