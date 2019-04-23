@@ -23,8 +23,8 @@ class QuoteSquare extends React.Component {
     }
 
     handleClick(e){
-        e.preventDefault();
-        this.componentDidMount();
+        // e.preventDefault();
+        window.location.reload();
     }   
 
     render(){
