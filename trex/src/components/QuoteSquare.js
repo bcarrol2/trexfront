@@ -7,9 +7,11 @@ class QuoteSquare extends React.Component {
 
         this.state = {
             quotes: []
+            // I create an empty array so I can constantly set the new state
         }
     }
 
+    // Really I could of put this function in componentDidMount... but I thought this was cool
     clickThisFunctionToGetANewRandomQuoteFromTheRailsServerICreated = () => {
         const quote = fetch('http://localhost:3000/quote')
         .then(res => res.json())
@@ -18,17 +20,19 @@ class QuoteSquare extends React.Component {
         })
     }
 
+    // This function calls on the function above
     componentDidMount(){
         this.clickThisFunctionToGetANewRandomQuoteFromTheRailsServerICreated()
     }
 
     render(){
-        let these = this.state.quotes;
+        let blahblahblah = this.state.quotes;
+        // just storing the data(new state) in a variable to call this instead of typing out this.state.whatever
 
         return(
             <div>
-                <div id="quote_sum">
-                    <h1>{these.text}</h1>
+                <div id="anotherOneOfThese">
+                    <h1>{blahblahblah.text}</h1>
                 </div> 
             </div>
         )

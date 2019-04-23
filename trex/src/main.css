@@ -34,7 +34,7 @@ button.ghost {
     border-color: #ffffff;
 }
 
-.square {
+.whateverSquare {
     background: #000;
     width: 45rem;
     height: 45rem;
@@ -45,18 +45,18 @@ button.ghost {
     /* position: absolute; */
 }
 
-.square h1 {
+.whateverSquare h1 {
     color: white;
 }
 
-#imgsum {
+#someNiceIdName {
     height: 100%; 
     width: 80%; 
     object-fit: contain;
     border: 1px solid white;
 }
 
-#quote_sum {
+#anotherOneOfThese {
     /* border: 1px solid white; */
     height: 170px;
     border-radius: 20%;
