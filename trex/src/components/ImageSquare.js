@@ -21,13 +21,18 @@ class ImageSquare extends React.Component {
         })
     }
 
+    handleClick = () => {
+        window.location.reload();
+    }
+
     render(){
         let pict = this.state.photo
+        console.log(pict.image_url)
 
         return(
             <div className="square">
                 <h1>Need some motivation?</h1>
-                <button>Generate New Picture</button>
+                <button onClick={this.handleClick}>Generate New Picture</button>
                 <div>
                     <img id="imgsum" src={pict.image_url} />
                 </div>

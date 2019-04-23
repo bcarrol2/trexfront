@@ -22,11 +22,6 @@ class QuoteSquare extends React.Component {
         this.clickThisFunctionToGetANewRandomQuoteFromTheRailsServerICreated()
     }
 
-    handleClick(e){
-        // e.preventDefault();
-        window.location.reload();
-    }   
-
     render(){
         let these = this.state.quotes;
 
@@ -35,9 +30,6 @@ class QuoteSquare extends React.Component {
                 <div id="quote_sum">
                     <h1>{these.text}</h1>
                 </div> 
-                <div>
-                    <button onClick={this.handleClick}>Generate random quote</button>
-                </div>
             </div>
         )
     }
