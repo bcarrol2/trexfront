@@ -1,5 +1,7 @@
 # trexfront
 
+I hope you enjoy
+
 ####### I just wanted to have a laugh and I hope somebody else will too
 
 ##### The point of this is to just generate a random picture along with a "not so serious quote"
