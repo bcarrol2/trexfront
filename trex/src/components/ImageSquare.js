@@ -36,14 +36,14 @@ class ImageSquare extends React.Component {
 
         return(
             // This is just what I want rendering on the page
-            <div className="whateverSquare">
+            <div className="bigFreakinDiv">
                 <h1>Need some comedic motivation?</h1>
                 <button onClick={this.handleClick}>Generate Alternate Set</button>
                 <div>
                     <img id="someNiceIdName" src={pict.image_url} />
                 </div>
                 <QuoteSquare />
-            </div>
+            </div>    
         )
     }
 }

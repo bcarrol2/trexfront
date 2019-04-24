@@ -1,6 +1,5 @@
 html {
     background-image: url('./trexbackground.jpg');
-    /* background-repeat: none; */
     background-size: 100%;
 }
 
@@ -17,7 +16,6 @@ button {
     font-weight: bold;
     padding: 10px 40px;
     letter-spacing: 1px;
-    /* position: absolute; */
 }
 
 button:active {
@@ -34,18 +32,16 @@ button.ghost {
     border-color: #ffffff;
 }
 
-.whateverSquare {
+.bigFreakinDiv {
     background: #000;
     width: 45rem;
     height: 45rem;
     border-radius: 10%;
     border: 2px solid white;
     margin: 20px 20px 20px 20px;
-    /* padding-top: 20px; */
-    /* position: absolute; */
 }
 
-.whateverSquare h1 {
+.bigFreakinDiv h1 {
     color: white;
 }
 
@@ -57,7 +53,6 @@ button.ghost {
 }
 
 #anotherOneOfThese {
-    /* border: 1px solid white; */
     height: 170px;
     border-radius: 20%;
 }

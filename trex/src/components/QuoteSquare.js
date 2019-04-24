@@ -32,7 +32,7 @@ class QuoteSquare extends React.Component {
         return(
             <div>
                 <div id="anotherOneOfThese">
-                    <h1>{blahblahblah.text}</h1>
+                    <h1>" {blahblahblah.text} "</h1>
                 </div> 
             </div>
         )
